@@ -3,6 +3,7 @@ def oxford_comma(array)
     return array.first 
   elsif array.length == 2 then  
     return "#{array.first} and #{array.last}" 
-  
-  return "#{array[0...-1].join(", ")}, and #{array.last}"
+  else
+    return "#{array[0...-1].join(", ")}, and #{array.last}"
+  end
 end
